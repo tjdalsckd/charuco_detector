@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <launch>
 	<!-- Change the following parameters according to the pattern in usage -->
-	<arg name="squares_sides_size_in_meters" default="0.028" />
-	<arg name="markers_sides_size_in_meters" default="0.021" />
-	<arg name="number_of_squares_in_x" default="10" />
-	<arg name="number_of_squares_in_y" default="14" />
-	<arg name="number_of_markers" default="70" />
+	<arg name="squares_sides_size_in_meters" default="0.040" />
+	<arg name="markers_sides_size_in_meters" default="0.030" />
+	<arg name="number_of_squares_in_x" default="5" />
+	<arg name="number_of_squares_in_y" default="7" />
+	<arg name="number_of_markers" default="17" />
 	<arg name="number_of_bits_for_markers_sides" default="4" />
 	<arg name="dictionary_id" default="3" />
 
 	<!-- Change the following 2 topics to match the ones published by your camera sensor -->
-	<arg name="image_topic" default="image_raw" />
-	<arg name="camera_info_topic" default="camera_info" />
+	<arg name="image_topic" default="/camera/color/image_raw" />
+	<arg name="camera_info_topic" default="/camera/color/camera_info" />
 	<arg name="image_analysis_publish_topic" default="$(arg image_topic)_charuco_detection" />
 	<arg name="charuco_pose_publish_topic" default="$(arg image_topic)_charuco_pose" />
 
